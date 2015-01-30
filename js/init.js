@@ -35,7 +35,7 @@
 
 /*
 
-// Events (jQuery).
+Events (jQuery).
 // Aerial doesn't need jQuery, but if you're going to use it anyway remove the
 // block of JS events above and use the jQuery-based ones below instead.
 
@@ -51,7 +51,7 @@
 				return false;
 			})
 
-		// Fix scroll position on orientation change.
+		 Fix scroll position on orientation change.
 			.on('orientationchange', function() {
 				$('body').scrollTop(0);
 			});
