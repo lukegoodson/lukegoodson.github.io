@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Luke Goodson</title>
+		<title>Luke J Goodson</title>
 		<meta name="google-site-verification" content="ub5Zgfn6dFppw_miNGWCURoAIHgbKlHRAIOzRdGoTOE" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -25,7 +25,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body> <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+	<body class="is-preload">
 		<span class="sr-only">Loading...</span>
 		<div id="wrapper">
 			<div id="bg"></div>
@@ -55,5 +55,10 @@
 				
 			</div>
 		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
